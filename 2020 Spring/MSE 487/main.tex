@@ -1,0 +1,50 @@
+\input{settings} % add packages, settings, and declarations in settings.tex
+
+\begin{document}
+
+\lhead{Dajie Xie UIN: 662066581} 
+\rhead{MSE 487 \\ Assignment 1} 
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+ \begin{enumerate}
+   \item Since this is a 4-layer chip and number of transistors on each layer is the same, each layer will distribute 1 billion transistors. And 1 billion transistors will be distributed within $ 80 mm^2 \times 25\% = 20 mm^2 $ area. Thus the area of one single transistor is $20mm^2/10^9=2\times10^{-8}mm^2$. Thus the \textbf{x and y dimensions of each transistor} can be $2\times10^{-4}mm$ and $1\times10^{-4}mm$, i.e., $\mathbf{200nm}$ and $\mathbf{100nm}$.
+   
+   \item 
+    \begin{enumerate}
+        \item[a.]According to the Moore's law, doubling the transistor count every 1.5 years, which can be regarded as exponential growth. So the function of transistor number(n) versus time(y) can be expressed as : $$ n=n_0 * 2^{\frac{y}{1.5}} $$ \\ where $n_0$ is the initial number. So in 5 years, the number of transistors on the chip will be $2^{5/1.5}=10.08$ times of the number now.  So the the needed power will be $\mathbf{100.8W}$.
+        \item[b.i.]Each transistor consumes $10W/4\times10^9=\mathbf{2.5\times10^{-9}W}$.  
+        \item[b.ii.]In 5 years, the number of transistor will be increased by 10.08 times. So the power consumed by each transistor will be $2.5\times10^{-9}W/10.08=\mathbf{2.46\times10^{-10}W}$.
+    \end{enumerate}
+    
+    \item Stokes equation for colloids is expressed as: $$F_d=6 \pi \mu R v $$ \\ where  $F_d$ is the frictional force; $\mu$ is the viscosity; $R$ is the radius of the spherical object; $v$ is the flow velocity relative to the object. 
+    \begin{enumerate}
+        \item[a.] The gravity of the particle is: $G=\rho Vg=\frac{4}{3} \pi R^3 \rho g$\\
+        in the end: $G=F_d=6 \pi \mu R v = \frac{4}{3} \pi R^3 \rho g$\\
+        therefore the terminal velocity is: $v=\frac{2}{9}\frac{R^2\rho g}{\mu}=0.0127 m/sec=12.7 mm/sec$
+        \item[b.] The terminal velocity of a 10 nm radius particle is: $$v=\frac{2}{9}\frac{R^2\rho g}{\mu}=1.27\times 10^{-8}m/sec=12.7 nm/sec$$
+        \item[c.] The viscosity of water is $8.9\times 10^{-4}Pa\cdot s$, the density of water is $1g/cm^3$. We need to take Buoyancy into consideration, so: $$F_d=G-F_f=\frac{4}{3} \pi R^3 (\rho-\rho_{water})g=6 \pi \mu R v$$ \\ 
+        $$v=\frac{2}{9}\frac{R^2(\rho-\rho_{water}) g}{\mu}=3.05\times 10^{-10}m/sec=0.305nm/sec$$ 
+    \end{enumerate}
+    
+   \newpage
+   
+   \item
+    \begin{enumerate}
+        \item[a.] The mass of earth is $5.8\times10^{27}g$. And earth is roughly made up of 32.1\% Fe, 30.1\% O, 15.1\% Si, 13.9\% Mg, 2.9\% S, 1.8\% Ni, 1.5\% Ca,1.4\% Al and 1.2\% other elements, which affects little in the calculation and will not be taken into consideration. So the average molar mass of earth can be calculated according to the mass fraction by: $$\bar{M}=1/({\sum_{i} \frac{w_{i}}{M_{i}}})=26.43$$
+        Therefore the number of atoms in earth is: $n=N_A m/\bar{M}=1.32\times 10^{50}$
+        \item[b.]$n={\frac{4}{3} \pi R^3 \rho N_A}/{M_{water}}= 1.4\times 10^{20}$ 
+        \item[c.]$M_{SiO_2}=60,  \rho _{SiO_2}=2.6g/cm^3$, so: $n={\frac{4}{3} \pi R^3 \rho N_A}/M=1.36\times 10^{10}$
+        \item[d.]$M_{Si}=28,  \rho _{Si}=2.32g/cm^3$, so: $n={\frac{4}{3} \pi R^3 \rho N_A}/M=3.26\times 10^{6}$
+        \item[e.]$M_{CdS}=144.4,  \rho _{Si}=4.82g/cm^3$, so: $n={\frac{4}{3} \pi R^3 \rho N_A}/M=1.05\times 10^{4}$
+    \end{enumerate}
+    
+    \item For a $n\times n\times n$ lattice cube, the atoms on the surface is supposed to be $2(n+1)^2+4(n-1)n=6n^2+2$, so the percent of atoms on the surface is $\frac{6n^2+2}{(n+1)^3}$. And the length of the side of the cube is $2n\AA$.
+     \begin{enumerate}
+         \item[a.] 27 atoms will form a $2\times 2\times 2$ lattice cube. So the percent is 96.29\% and length is $4\AA$.
+         \item[b.] 64 atoms will form a $3\times 3\times 3$ lattice cube. So the percent is 87.5\% and length is $6\AA$.
+         \item[c.] 1000 atoms will form a $9\times 9\times 9$ lattice cube. So the percent is 48.8\% and length is $18\AA$.
+         \item[d.] 15625 atoms will form a $24\times 24\times 24$ lattice cube. So the percent is 22.1\% and length is $48\AA$.
+     \end{enumerate}
+ \end{enumerate}
+
+\end{document}
