@@ -1,0 +1,71 @@
+\input{settings} % add packages, settings, and declarations in settings.tex
+\usepackage{float}
+\usepackage{wrapfig}
+
+
+\begin{document}
+
+\lhead{\textbf{Dajie Xie}} 
+\rhead{MSE 487 \\ Assignment 2} 
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+ \begin{enumerate}
+   \item The de Broglie wavelength of an objective is: $ \lambda={h}/{m v}$. After accelerating by a potential: $E=\frac{1}{2}\mathrm{mv}^{2}=\mathrm{eU}\Rightarrow v=\sqrt{(2eU/m)} \Rightarrow \lambda={h}/\sqrt{2emU}$.\\ 
+   The mass of an electron $m = 9.1\times 10^{-31}Kg$ ,the electron charge $e = 1.6\times 10^{-19}C$, and the Plank Constant is $h=6.63\times 10^{-34} m^2Kg/s$. Therefore:
+   \begin{enumerate}
+       \item[a.] U=10V, $\lambda=3.88\times 10^{-10}m$.
+       \item[b.] U=500V, $\lambda=5.49\times 10^{-11}m$.
+       \item[c.] When U=100kV, the electrons are accelerated into a speed that the relativistic effect need to be taken into consideration: $$\begin{array}{c}{m_{\mathrm{rel}}=\gamma \cdot m_{e}=\frac{m_{e}}{\sqrt{1-\frac{v^{2}}{c^{2}}}} }\\{\Delta E = m_{\mathrm{rel}} \cdot c^{2}-m_{e} \cdot c^{2}=e\cdot U \Rightarrow v_{ rel}=c \cdot \sqrt{1-\frac{1}{\left(1+\frac{U \cdot e}{m_{e} \cdot c^{2}}\right)^{2}}}}\\{\Rightarrow v_{rel}=1.64\times 10^8 m/s, m_{rel}=1.088\times 10^{-30}Kg \Rightarrow \lambda= 3.74\times 10^{-12}m}\end{array}$$.
+   \end{enumerate}
+    
+   \item $M_{Au}=197,N_{Au}=N_Am/M_{Au}$. Therefore: 
+   \begin{enumerate}
+       \item[a.] $m=1\times 10^{-9}g, N_{Au}=3.06\times 10^{12}$
+       \item[b.] $m=1\times 10^{-12}g, N_{Au}=3.06\times 10^{9}$
+       \item[c.] $m=1\times 10^{-15}g, N_{Au}=3.06\times 10^{6}$
+   \end{enumerate}
+   
+   \item In Aluminum, $v_{sound}= 5000 m/s$.Therefore:
+   \begin{enumerate}
+       \item[a.] $t=1\times 10^{-6}s, d=5\times 10^{-3}m$
+       \item[b.]$t=1\times 10^{-9}s, d=5\times 10^{-6}m$
+   \end{enumerate}
+   
+   \item The refractive index $n=c/v \Rightarrow d = ct/n$. For silica, the $n_{633nm}=1.5426$. Therefore:
+   \begin{enumerate}
+       \item[a.] $t=1\times 10^{-9}s, d=0.194m$
+       \item[b.] $t=1\times 10^{-15}s, d=1.94\times 10^{-7}m$
+   \end{enumerate}
+   
+   \item Due to the surface tension, the surface tension at the edge is balanced by the pressure force inside the droplet: $D\pi \sigma=\Delta p\pi D^2/4 \Rightarrow p=4\sigma/D+p_{atm}$. The surface tension of pure liquid water in contact with its vapor has been given by:
+   $$\sigma=235.8\left(1-\frac{T}{T_{\mathrm{C}}}\right)^{1.256}\left[1-0.625\left(1-\frac{T}{T_{\mathrm{C}}}\right)\right] \mathrm{mN} / \mathrm{m}, T_C = 647.096 K$$
+   \begin{enumerate}
+       \item[a.] When $T=25^oC, \sigma= 72.0\mathrm{mN} / \mathrm{m} \Rightarrow p=676 kPa$
+       \item[a.] When $T=90^oC, \sigma= 60.8\mathrm{mN} / \mathrm{m} \Rightarrow p=586.4 kPa$
+   \end{enumerate}
+   
+   \item As for Hg, the surface tension at $25^oC$ is 485.5 mN/m. $\Rightarrow p= 1.952\times 10^{4}kPa$
+   \newpage
+   
+   \item As shown in the Fig.1, the pressure is required to balance the surface tension on the vertical direction. The sum of vertical surface tension on the circle of the pore equals to the sum of pressure on the cross-section of the pore:
+   $$p={\pi D \sigma cos(180^o-\theta)}/{\frac{\pi}{4}D^2}=-4\sigma cos\theta/D=500.1kPa$$.
+    
+    \begin{figure}[H]
+       \centering
+       \includegraphics[scale=0.4]{forcediagram.png}
+       \caption{Force Diagram for Q7}
+       \label{fig:my_label}
+   \end{figure}
+   
+   \item Assume the emitted in the vacuum, then: $E_{g}= hc/\lambda \Rightarrow \lambda = hc/E_{g}$.
+   \begin{enumerate}
+       \item $E_{g}=2eV, \lambda = 621.56nm$ So the light is orange.
+       \item $E_{g}=3eV, \lambda = 414.38nm$ So the light is violet.
+       \item $E_{g}=4eV, \lambda = 310.78nm$ So the light is in the Near ultraviolet range and is invisible.
+       
+   \end{enumerate}
+    
+ \end{enumerate}
+
+
+\end{document}
