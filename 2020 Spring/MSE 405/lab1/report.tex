@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}% Change the margins here if you wish.
+\setlength{\parskip}{5pt} % This sets the distance between paragraphs
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[framed,numbered,autolinebreaks]{mcode}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{amsmath,amsfonts,amsthm,bm} % Math packages
+\usepackage{float}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
+
+
+
+\begin{document}
+
+\title{\textbf{MSE 405 lab 1 Report}}
+\author{Dajie Xie}
+
+\maketitle
+
+\section{Lab}
+
+\begin{enumerate}
+    \item Calibrate the length scale of the images:
+    \begin{enumerate}
+        \item[a.] The nominal length between the smallest divisions on the Length Standard slide is $\mathbf{10\bm{\mu} m}$. 
+        
+        \item[b.] The image of the Length Standard slide for the 100x objective:
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.15]{100xobj_scale.png}
+            \caption{Image of the Length Standard slide}
+            \label{fig:my_label}
+        \end{figure}
+
+        
+        \item[c.]The results are:
+        \begin{enumerate}
+            \item 4x: 0.5833 pixels/$\mu m$
+            \item 10x: 1.5001 pixels/$\mu m$
+            \item 40x: 6.0203 pixels/$\mu m$
+            \item 100x: 15.7029 pixels/$\mu m$
+        \end{enumerate}
+    \end{enumerate}
+    
+    \newpage
+    
+    \item Examination of corn seed sample.  
+    \begin{enumerate}
+        \item[a.] I choose the corn seed micrograph under the 100x Objective to determine the size of cells, which is shown with scale bar here:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.14]{cornseed100withbar.png}
+            \caption{The corn seed sample under 100x Objective}
+            \label{fig:my_label}
+        \end{figure}
+        \item[b.] I choose the cells in the center of the image and measure their heights and widths(Fig. 3). The average cell height and width height and width are {\boldmath$6.96\pm 1.30 \mu m$} and {\boldmath$12.38\pm 3.27 \mu m$} respectively.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.3]{measurement.png}
+            \caption{Measurement of heights and widths}
+            \label{fig:my_label}
+        \end{figure}
+        
+    \end{enumerate}
+    
+    \item 
+    \begin{enumerate}
+        \item[a.] The image of the stem using 10x objective is shown below:
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.14]{cornstem10withscale.png}
+            \caption{The stem under 10x Objective}
+            \label{fig:my_label}
+        \end{figure}
+    
+        \item[b.] The size distribution is shown below:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.8]{distribution.png}
+            \caption{Size distribution of corn stem}
+            \label{fig:my_label}
+        \end{figure}
+        
+        \item[c.] Although there is no clear gap in my plot profile, it is clearly that there are two lines the on this graph, whose slopes are totally different(Fig.6). Therefore, there are two types of cells here. The size of small cells ranges from $10 \mu m^2$ to $100 \mu m^2 $ and the size of large cells ranges from $1000 \mu m^2$ to $50000 \mu m^2$. 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{linear.png}
+            \caption{Linear fit of two types of cells}
+            \label{fig:my_label}
+        \end{figure}
+    \end{enumerate}
+        
+    
+\end{enumerate}
+
+
+\section{Prelab}
+\begin{enumerate}
+    \item[4.] BCD
+    \item[5.] As clearly shown in the Fig. 7, the two focal should coincide with each other and the lens with small focal length should be in the front, then the laser beam will be expanded. Therefore Distance A and C are arbitrary and the Distance B is the sum of two focal length, i.e., 185mm. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{prelab.png}
+        \caption{Schematic diagram of laser setup}
+        \label{fig:my_label}
+    \end{figure}
+    
+\end{enumerate}
+
+
+\end{document}
